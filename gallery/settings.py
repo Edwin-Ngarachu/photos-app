@@ -73,16 +73,16 @@ WSGI_APPLICATION = 'gallery.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'photo_gallery',
-#         'USER': 'gallery_user',
-#         'PASSWORD': '123456',
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'photo_gallery',
+        'USER': 'gallery_user',
+        'PASSWORD': '123456',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
 DATABASES = {
  # the link here is the external link provided on postgresql web service db
  "default": dj_database_url.parse("postgresql://photos_fke3_user:7OIlv1mF0oVuGEybdpEefI1JW15fZyK6@dpg-d0vvp6ali9vc73dapbd0-a.oregon-postgres.render.com/photos_fke3")
