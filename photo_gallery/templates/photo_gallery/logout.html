@@ -1,0 +1,13 @@
+{% extends "photo_gallery/base.html" %}
+
+{% block title %}Logged Out{% endblock title %}
+
+{% block content %}
+<div class="max-w-md mx-auto bg-white rounded-lg shadow-md p-8 mt-10 text-center">
+    <h1 class="text-2xl font-bold mb-4">You have been logged out</h1>
+    <p class="mb-6">Thanks for visiting our photo gallery!</p>
+    <a href="{% url 'login' %}" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+        Login Again
+    </a>
+</div>
+{% endblock content %}
